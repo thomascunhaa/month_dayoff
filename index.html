@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escala de Folga 12/36 - 2024</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .filter-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .calendar-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .month {
+      border: 1px solid #ccc;
+      background-color: #fff;
+      padding: 10px;
+      width: calc(33.33% - 20px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .month h2 {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: 5px;
+    }
+
+    .day {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .day.folga {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .day-header {
+      font-weight: bold;
+      background-color: #ddd;
+    }
+
+    .weekend {
+      background-color: #f2f2f2;
+    }
+
+    @media (max-width: 768px) {
+      .month {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Folgas da Elen - Ano: 2024</h1>
+
+<div class="filter-container">
+  <label for="monthFilter">Selecione o mês:</label>
+  <select id="monthFilter">
+    <option value="0">Todos</option>
+    <option value="1">Janeiro</option>
+    <option value="2">Fevereiro</option>
+    <option value="3">Março</option>
+    <option value="4">Abril</option>
+    <option value="5">Maio</option>
+    <option value="6">Junho</option>
+    <option value="7">Julho</option>
+    <option value="8">Agosto</option>
+    <option value="9">Setembro</option>
+    <option value="10">Outubro</option>
+    <option value="11">Novembro</option>
+    <option value="12">Dezembro</option>
+  </select>
+</div>
+
+<div class="calendar-container" id="calendarContainer"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
