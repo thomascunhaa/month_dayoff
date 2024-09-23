@@ -5,7 +5,7 @@ const totalDaysInMonth = (month, year) => new Date(year, month, 0).getDate();
     const calendarContainer = document.getElementById('calendarContainer');
     calendarContainer.innerHTML = ''; // Limpa o calendário antes de gerar
 
-    let isFolga = false; // Alterna entre folga e trabalho (true para folga, false para trabalho)
+    let isFolga = true; // Alterna entre folga e trabalho (true para folga, false para trabalho)
 
     const dayNames = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
 
